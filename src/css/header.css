@@ -1,0 +1,20 @@
+.header_container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.header_h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 2px 2px #000000
+}
+
+.header_h4{
+    font-weight: 500;
+    margin-top: 20px;
+}

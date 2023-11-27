@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header.jsx';
+import SongList from './sections/songList/SongList.jsx';
 
 function App() {
+
+  const happySongs = ["HappyBirthday", "Celibrate", "Dancing", "DJ"];
+  const sadSongs = ["Crying", "Feeling", "Broking", "Silent"];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is music app
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="App">
+      <Header />
+      <SongList songsType="Happy" songs={happySongs} rating={5} color="#00ff00"/>
+      <SongList songsType="Sad" songs={sadSongs} rating={10} color={"#818181"}/>
+    </main>
   );
 }
 
